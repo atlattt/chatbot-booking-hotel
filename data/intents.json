@@ -1,0 +1,263 @@
+{
+    "intents":[
+        {
+            "tag": "greeting",
+            "pattern":["Xin chào","chào bạn","hi","Có ai ở đây không"],
+            "responses":["Chào bạn! Tôi có thể giúp gì cho bạn không?"]
+        },
+        {
+            "tag": "goodbye",
+            "pattern":["Tạm biệt","Hẹn gặp lại","Bye","Goodbye"],
+            "responses":["Hẹn gặp lại bạn!"]
+        },
+        {
+            "tag": "thanks",
+            "pattern":["Cảm ơn","Thank you","Thanks"],
+            "responses":["Không có gì, tôi rất vui khi được giúp bạn!"]
+        },
+        {
+            "tag":"faq",
+            "pattern":["Bạn có thể hỗ trợ tôi không","Tôi cần giúp đỡ","Tôi cần hỗ trợ","Tôi cần giúp đỡ"],
+            "responses":["Dĩ nhiên, tôi sẽ cố gắng giúp bạn! Bạn cần giúp gì? Bạn có thể hỏi tôi về các vấn đề liên quan đến sản phẩm, dịch vụ hoặc chính sách của chúng tôi."]
+        },
+        {
+            "tag":"faq_smoking",
+            "pattern":["Tôi có thể hút thuốc ở đây không","Tôi có thể hút thuốc không","Tôi có thể hút thuốc ở đâu không","Hút thuốc","Khách sạn này có cho phép hút thuốc không"],
+            "responses":["Xin lỗi, chúng tôi không cho phép hút thuốc trong khách sạn. Điều này giúp chúng tôi bảo vệ sức khỏe của tất cả khách hàng và nhân viên. Nhưng chúng tôi có khu vực hút thuốc riêng ở mỗi tầng của khách sạn.Vui lòng tuân thủ quy đinh của chúng tôi. Cảm ơn bạn!"]
+
+        },
+        {
+            "tag":"faq_pets",
+            "pattern":["Tôi có thể mang thú cưng theo không","Tôi có thể mang thú cưng theo không","Tôi có thể mang thú cưng theo không","Thú cưng","Khách sạn này có cho phép mang thú cưng không","mang mèo vào đây được không","mang chó vào đây được không"],
+            "responses":["Xin lỗi, chúng tôi không cho phép mang thú cưng vào khách sạn. Điều này giúp chúng tôi bảo vệ sức khỏe của tất cả khách hàng và nhân viên. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_breakfast",
+            "pattern":["Bữa sáng","Bữa sáng bao nhiêu tiền","Bữa sáng có bao gồm trong giá phòng không","Bữa sáng có bao gồm không","Bữa sáng có bao gồm trong giá phòng không","Ăn sáng ở đây như nào"],   
+            "responses":["Bữa sáng không bao gồm trong giá phòng. Bạn có thể chọn thêm bữa sáng với giá 100.000đ/người. Bữa sáng sẽ được phục vụ từ 6:00 - 10:00 hàng ngày. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_checkin",
+            "pattern":["Giờ check-in","Check-in","Check-in lúc mấy giờ","Checkin từ lúc nào","Checkin từ lúc mấy giờ","Khách sạn ở đây checkin từ lúc mấy giờ","Giờ vào của khách sạn","Giờ checkin của khách sạn","Thủ tục nhận phòng như thế nào","Thủ tục checkin như thế nào","Quy trình nhận phòng","Quy trình checkin","Checkin như thế nào","Checkin của khách sạn như thế nào","Checkin của khách sạn","Checkin của khách sạn như thế nào"],
+            "responses":["Khách sạn chúng tôi quy định giờ check-in từ 6h-24h. Sau khoảng thời gian đó chúng tôi không nhận check-in. Để thủ tục check-in nhanh chóng, bạn vui lòng mang theo giấy tờ tùy thân (CMND hoặc hộ chiếu) và thẻ tín dụng khi nhận phòng. Cảm ơn bạn!"]  
+        },
+        {
+            "tag":"faq_checkout",
+            "pattern":["Tôi muốn check-out",
+                    "Tôi muốn trả phòng",
+                    "Làm thủ tục check-out",
+                    "Check-out bây giờ được không?",
+                    "Cho tôi làm thủ tục trả phòng",
+                    "Tôi có thể trả phòng ngay không?",
+                    "Check-out ngay",
+                    "Tôi muốn rời khách sạn",
+                    "Quy trình checkout",
+                    "Làm sao để check-out?",
+                    "Tôi cần trả phòng",
+                    "Khi nào phải check-out?",
+                    "Tôi muốn check-out sớm",
+                    "Tôi cần check-out trễ",
+                    "Check-out lúc nào?",
+                    "Vui lòng cho tôi check-out"],
+            "responses":["Thời gian check-out là trước 12:00 trưa. Nếu bạn muốn check-out trễ hơn, vui lòng thông báo cho chúng tôi trước 1 ngày để chúng tôi sắp xếp. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_checkin_checkout",
+            "pattern":["Cho tôi biết quy trình làm thủ tục","Giờ check-in và checkout của khách sạn","check-in và check-out","Tôi muốn biết về check-in và check-out","Quy trình check-in và check-out","Thủ tục check-in và check-out","Check-in và check-out như thế nào","Check-in và check-out của khách sạn","Check-in và check-out của khách sạn như thế nào"],
+            "responses":["Khách sạn chúng tôi quy định giờ check-in từ 6h-24h. Sau khoảng thời gian đó chúng tôi không nhận check-in. Để thủ tục check-in nhanh chóng, bạn vui lòng mang theo giấy tờ tùy thân (CMND hoặc hộ chiếu) và thẻ tín dụng khi nhận phòng.Về checkout thì chúng tôi chỉ checkout trước 12h trưa. Nếu bạn muốn checkout trễ hơn vui lòng báo cho chúng tôi trước 1 ngày để chúng tôi sắp xếp. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_wifi",
+            "pattern":["khách sạn có wifi ko","Có wifi không","wifi","Wifi","Mật khẩu wifi","Mật khẩu wifi là gì","Mật khẩu wifi của khách sạn","Mật khẩu wifi của khách sạn là gì"],
+            "responses":["Khách sạn chúng tôi cung cấp wifi miễn phí cho khách hàng. Mật khẩu wifi của chúng tôi là: 123456789. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_restaurant",
+            "pattern":["Khách sạn mình có nhà hàng không","Nhà hàng","Nhà hàng của khách sạn","Nhà hàng ở đâu","Nhà hàng ở khách sạn"],
+            "responses":["Khách sạn chúng tôi có nhà hàng phục vụ ẩm thực đa dạng từ 6:00 - 22:00 hàng ngày. Bạn có thể thưởng thức các món ăn ngon tại nhà hàng của chúng tôi. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_parking",
+            "pattern":["Khách sạn có chỗ đậu xe không","Chỗ đậu xe","Chỗ đậu xe của khách sạn","Chỗ đậu xe ở đâu","Chỗ đậu xe ở khách sạn"],
+            "responses":["Khách sạn chúng tôi có chỗ đậu xe miễn phí cho khách hàng. Bạn có thể yên tâm về vấn đề này. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_room_service",
+            "pattern":["Dịch vụ phòng","Dịch vụ phòng của khách sạn","Dịch vụ phòng ở đâu","Dịch vụ phòng ở khách sạn"],
+            "responses":["Khách sạn chúng tôi cung cấp dịch vụ phòng 24/7. Bạn có thể gọi điện thoại đến bộ phận tiếp tân để yêu cầu dịch vụ phòng. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_sdt",
+            "pattern":["Số điện thoại của khách sạn","Số điện thoại","Số điện thoại liên hệ","Liên hệ","Liên hệ với khách sạn","Liên hệ với khách sạn như thế nào","Sđt","sdt"],
+            "responses":["Số điện thoại của khách sạn chúng tôi là: 0336771943 hoặc 0123456789. Bạn có thể gọi điện thoại đến số này để liên hệ với chúng tôi. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_pool",
+            "pattern":["Hồ bơi","Hồ bơi của khách sạn","Hồ bơi ở đâu","Hồ bơi ở khách sạn"],
+            "responses":["Khách sạn chúng tôi có hồ bơi miễn phí cho khách hàng. Bạn có thể sử dụng dịch vụ này trong thời gian hoạt động của hồ bơi. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_gym",   
+            "pattern":["Phòng tập gym","Phòng tập gym của khách sạn","Phòng tập gym ở đâu","Phòng tập gym ở khách sạn"],
+            "responses":["Khách sạn chúng tôi có phòng tập gym miễn phí cho khách hàng. Bạn có thể sử dụng dịch vụ này trong thời gian hoạt động của phòng tập gym. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"faq_cancelling_policy",
+            "pattern":["Chính sách hủy phòng","Chính sách hủy phòng của khách sạn","Chính sách hủy phòng như thế nào","Chính sách hủy phòng của khách sạn như thế nào","Chính sách hủy phòng của khách sạn ra sao","Chính sách hủy phòng ra sao","Chính sách hủy phòng như thế nào"],
+            "responses":["Chính sách hủy phòng của khách sạn chúng tôi như sau: - Hủy phòng trước 24h sẽ không bị tính phí. - Hủy phòng sau 24h sẽ bị tính phí 50% giá phòng. - Không hủy phòng và không đến sẽ bị tính phí 100% giá phòng. Cảm ơn bạn!"]
+        },
+        {
+            "tag":"notag",
+            "pattern":"",
+            "responses":["Xin lỗi, tôi không hiểu bạn đang nói gì. Bạn có thể đặt câu hỏi khác cho tôi không?"]
+        },
+        {
+            "tag":"booking",
+            "pattern":["Tôi muốn đặt phòng","Tôi muốn đặt phòng ngay","Tôi muốn đặt phòng ngay bây giờ","Tôi muốn đặt phòng ngay lập tức","Tôi muốn đặt phòng ngay lúc này","Tôi muốn đặt phòng khách sạn"],
+            "responses":["Chắc chắn rồi, bạn có thể cho tôi biết thông tin phòng bạn muốn đặt được không? Ví dụ: loại phòng, số người ở trong một phòng, ..."],
+            "context_set":"booking"
+        },
+        {
+            "tag": "room_type_standard",
+            "pattern": ["Loại phòng Standard", "Phòng Standard", "Standard","Tôi muốn đặt phòng rẻ nhất","Phòng bình dân ở khách sạn","Chúng tôi cần phòng đủ ngủ thôi","Cần phòng đáp ứng nhu cầu ngủ nghỉ là được"],
+            "responses": ["Phòng Standard là lựa chọn cơ bản của chúng tôi, với đầy đủ tiện nghi đáp ứng nhu cầu của khách hàng. Bạn có thể chọn loại giường phù hợp cho phòng Standard. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "room_type_vip",
+            "pattern": ["Loại phòng VIP", "Phòng VIP", "VIP","Phòng xịn nhất ở đây","Phòng đẹp nhất","Phòng mắc tiền nhất ở đây","Tôi muốn đặt phòng không quan trọng về giá","Phòng đắt tiền nhất"],
+            "responses": ["Phòng VIP là lựa chọn cao cấp với không gian rộng rãi và các tiện ích đặc biệt. Đây là phòng lý tưởng cho những khách hàng muốn trải nghiệm dịch vụ tốt nhất của chúng tôi. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "bed_type_single",
+            "pattern": ["1 Single Bed", "Giường đơn", "Phòng với 1 giường đơn","1 giường ngủ","Phòng chỉ cần một giường ngủ","Phòng cho một người"],
+            "responses": ["Loại phòng này có 1 giường đơn, phù hợp cho khách hàng đi một mình. Đây là lựa chọn tiện lợi và thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "bed_type_2_single",
+            "pattern": ["2 Single Beds", "2 giường đơn", "Phòng với 2 giường đơn","phòng cho 2 người với hai giường riêng biệt","Có loại phòng nào có hai giường đơn không"],
+            "responses": ["Loại phòng này có 2 giường đơn, phù hợp cho 2 người với không gian ngủ riêng biệt. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "bed_type_double",
+            "pattern": ["1 Double Bed", "Giường đôi", "Phòng với 1 giường đôi","Phòng cho vợ chồng","Phòng cho hai người ngủ chung","Phòng có giường đôi lớn không","Có loại phòng nào có giường đôi không"],
+            "responses": ["Loại phòng này có 1 giường đôi, phù hợp cho 2 người. Giường đôi tạo không gian thoải mái cho cặp đôi hoặc bạn bè. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "bed_type_2_double",
+            "pattern": ["2 Double Beds", "2 giường đôi", "Phòng với 2 giường đôi","Phòng với hai giường đôi","Tôi cần phòng cho gia đình với 2 giường đôi","phòng cho gia đình và hai đứa con","phòng cho gia đình và 2 đứa con","phòng cho gia đình và 2 đứa trẻ"],
+            "responses": ["Phòng này có 2 giường đôi, phù hợp cho gia đình hoặc nhóm bạn bè. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "bed_type_double_single",
+            "pattern": ["1 Double Bed and 1 Single Bed", "Giường đôi và giường đơn", "Phòng với 1 giường đôi và 1 giường đơn","Phòng cho gia đình và một đứa con","phòng cho gia đình và hai đứa con","phòng cho gia đình và 1 đứa con"],
+            "responses": ["Phòng này có 1 giường đôi và 1 giường đơn, phù hợp cho gia đình nhỏ hoặc nhóm khách lẻ. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+
+        {
+            "tag": "bed_type_double_sofa",
+            "pattern": ["1 Double Bed and 1 Sofa Bed", "Giường đôi và sofa giường", "Phòng với 1 giường đôi và 1 sofa giường","Phòng có sofa và giường cho vợ chồng"],
+            "responses": ["Phòng này có 1 giường đôi và 1 sofa giường, cung cấp thêm không gian ngủ cho khách. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "bed_type_single_sofa",
+            "pattern": ["1 Single Bed and 1 Sofa Bed", "Giường đơn và sofa giường", "Phòng với 1 giường đơn và 1 sofa giường"],
+            "responses": ["Phòng này có 1 giường đơn và 1 sofa giường, phù hợp cho khách đơn muốn thêm không gian nghỉ ngơi. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "bed_type_2_double_sofa",
+            "pattern": ["2 Double Beds and 1 Sofa Bed", "2 giường đôi và sofa giường", "Phòng với 2 giường đôi và 1 sofa giường"],
+            "responses": ["Phòng này có 2 giường đôi và 1 sofa giường, lý tưởng cho gia đình hoặc nhóm bạn đông người. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Deluxe Room",
+            "pattern": ["Tôi muốn đặt phòng cho một người ở với tầm nhìn ra thành phố, không gian yên bình thoải mái","Tôi muốn đặt phòng Deluxe","Phòng Deluxe","Phòng Deluxe 1 giường đơn","Phòng Deluxe 1 giường đơn thoải mái","Phòng Deluxe 1 giường đơn tiện nghi","Tôi muốn đặt một phòng đơn với tầm nhìn ra thành phố, ưu tiên không gian yên tĩnh và thoải mái.","Xin tư vấn giúp tôi một phòng cho một người với view thành phố, nơi yên tĩnh để nghỉ ngơi.","Tôi cần đặt một phòng ngủ cho một người, có tầm nhìn đẹp ra thành phố và không gian thư giãn.","Hãy tìm giúp tôi một phòng đơn yên bình, thoáng đãng, có view thành phố.","Tôi muốn đặt phòng cho một người ở, có cửa sổ nhìn ra thành phố và không khí dễ chịu.","Xin tư vấn một phòng đơn với không gian thoải mái và view thành phố tuyệt đẹp.","Tôi cần một phòng ngủ dành cho một người, với tầm nhìn thành phố và không gian yên bình.","Tôi muốn tìm một căn phòng đơn giản, thoải mái, có view hướng thành phố."],
+            "responses": ["Phòng Deluxe là lựa chọn phổ biến với 1 giường đơn, phù hợp cho khách hàng đi một mình. Phòng Deluxe có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Sapphire Sanctuary Room",
+            "pattern": ["Tôi muốn đặt một phòng có 2 giường đơn, tầm nhìn ra biển, ánh sáng tự nhiên và không gian thư giãn.","Xin gợi ý một phòng đôi với 2 giường đơn, view hướng biển và không gian thoáng đãng, yên tĩnh.","Tôi cần một phòng dành cho 2 người, có 2 giường đơn, tầm nhìn đẹp ra biển và ánh sáng tự nhiên tràn ngập.","Hãy tìm giúp tôi một phòng với 2 giường đơn, view biển và không gian tạo cảm giác thoải mái, thư giãn.","Tôi muốn đặt một phòng 2 người, có 2 giường riêng, tầm nhìn hướng biển và ánh sáng tự nhiên.","Tôi cần đặt phòng với 2 giường đơn, không gian yên bình và tầm nhìn ra biển tuyệt đẹp.","Hãy đặt cho tôi một phòng đôi với 2 giường đơn, cửa sổ lớn nhìn ra biển và cảm giác thoáng đãng.","Tôi muốn tìm một phòng có 2 giường riêng, view biển, thiết kế thanh bình và ánh sáng chan hòa."],
+            "responses": ["Phòng Sapphire Sanctuary là lựa chọn phổ biến với 2 giường đơn, phù hợp cho 2 người. Phòng Sapphire Sanctuary có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Opal Oasis Room",
+            "pattern": ["Tôi muốn đặt một phòng giường đôi với tầm nhìn ra khu vườn xanh mát, mang đến không gian yên tĩnh và gần gũi với thiên nhiên.","Hãy tìm giúp tôi một phòng đôi có view khu vườn, không gian thoáng đãng và thích hợp cho người yêu thiên nhiên.","Tôi cần đặt một phòng giường đôi với khung cảnh nhìn ra khu vườn, nơi cây cối bao quanh tạo cảm giác thư giãn.","Tôi muốn một phòng giường đôi với không gian yên bình, tầm nhìn hướng ra khu vườn xanh tươi.","Hãy đặt giúp tôi một phòng đôi với cửa sổ lớn nhìn ra khu vườn và không gian tĩnh lặng.","Tôi muốn đặt một phòng có giường đôi, view vườn xanh mát và không khí dễ chịu, lý tưởng để nghỉ ngơi.","Tôi đang tìm một phòng giường đôi, có tầm nhìn ra khu vườn bao quanh bởi cây xanh, tạo cảm giác gần gũi với thiên nhiên.","Xin gợi ý một phòng đôi với giường lớn và view khu vườn, nơi có không gian tĩnh lặng và xanh mát."],
+            "responses": ["Phòng Opal Oasis là lựa chọn phổ biến với 1 giường đôi, phù hợp cho 2 người. Phòng Opal Oasis có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Emerald Enclave Room",
+            "pattern": ["Tôi muốn đặt một phòng có 2 giường đôi, tầm nhìn ra hồ bơi, mang đến không gian thư thái và sang trọng.","Hãy tìm giúp tôi một phòng với 2 giường đôi, view hướng hồ bơi, không gian thoáng mát và cảm giác thư giãn.","Tôi cần đặt một phòng đôi với 2 giường lớn, có tầm nhìn ra hồ bơi và không gian kết hợp giữa sự sang trọng và thoải mái.","Tôi muốn một phòng 2 giường đôi, thiết kế hiện đại với view hồ bơi và cảm giác gần gũi với làn nước mát.","Xin gợi ý một phòng có 2 giường đôi, tầm nhìn đẹp ra hồ bơi, nơi lý tưởng để tận hưởng sự thư giãn.","Tôi cần đặt phòng với 2 giường đôi, không gian rộng rãi, view hồ bơi sang trọng và không khí dễ chịu.","Hãy tìm giúp tôi một phòng 2 giường đôi, cửa sổ lớn nhìn ra hồ bơi, nơi mang đến sự thoải mái và thanh bình.","Tôi muốn một phòng với 2 giường đôi, view hồ bơi, thiết kế tinh tế và không gian tạo cảm giác thư giãn tuyệt đối."],
+            "responses": ["Phòng Emerald Enclave là lựa chọn phổ biến với 2 giường đôi, phù hợp cho gia đình hoặc nhóm bạn. Phòng Emerald Enclave có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Ruby Retreat Room",
+            "pattern": ["Tôi muốn đặt một phòng có tầm nhìn ra núi, với 1 giường đôi và 1 giường đơn, không gian ấm áp và yên bình.","Hãy tìm giúp tôi một phòng có giường đôi và giường đơn, view núi tuyệt đẹp, phù hợp cho kỳ nghỉ thư giãn.","Tôi cần một phòng với 1 giường đôi và 1 giường đơn, tầm nhìn hướng núi, không gian lý tưởng để tránh xa nhịp sống bận rộn.","Tôi muốn đặt một phòng ấm cúng với 1 giường đôi, 1 giường đơn và view nhìn ra núi.","Xin tư vấn giúp tôi một phòng với giường đôi và giường đơn, có tầm nhìn ra núi và không gian yên tĩnh.","Tôi cần một phòng dành cho gia đình với 1 giường lớn, 1 giường nhỏ và tầm nhìn hướng núi, nơi tạo cảm giác thư thái.","Hãy đặt giúp tôi một phòng có 1 giường đôi và 1 giường đơn, với không gian ấm áp và view núi hùng vĩ.","Tôi muốn tìm một phòng phù hợp với gia đình nhỏ, có 1 giường đôi, 1 giường đơn và tầm nhìn ra núi, không khí yên bình."],
+            "responses": ["Phòng Retreat Room là lựa chọn phổ biến với 1 giường đôi và 1 giường đơn, phù hợp cho gia đình hoặc nhóm bạn. Phòng Retreat Room có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Diamond Suite Room",
+            "pattern": ["Tôi muốn đặt một phòng sang trọng có ban công riêng, với 1 giường đôi và 1 sofa, tầm nhìn toàn cảnh ra biển.","Hãy tìm giúp tôi một phòng có giường đôi và sofa, ban công riêng với view biển, phù hợp cho kỳ nghỉ lãng mạn.","Tôi cần một phòng với 1 giường đôi, 1 sofa và ban công lớn nhìn ra biển, thiết kế sang trọng và thoải mái.","Tôi muốn đặt một phòng giường đôi, có thêm sofa và ban công riêng, cho tầm nhìn đẹp ra biển.","Xin gợi ý một phòng sang trọng với 1 giường đôi, 1 sofa và ban công hướng biển, lý tưởng cho một kỳ nghỉ xa hoa.","Tôi cần đặt một phòng có giường đôi và sofa, ban công riêng với tầm nhìn ra biển, mang đến cảm giác thư giãn.","Hãy đặt cho tôi một phòng với 1 giường lớn, 1 sofa, ban công rộng rãi và view biển tuyệt đẹp.","Tôi muốn tìm một phòng có giường đôi, sofa và ban công riêng nhìn ra biển, thích hợp cho kỳ nghỉ lãng mạn."],
+            "responses": ["Phòng Diamond Suite là lựa chọn phổ biến với 1 giường đôi và 1 sofa, phù hợp cho gia đình hoặc nhóm bạn. Phòng Diamond Suite có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Pearl Pad Room",
+            "pattern": ["Tôi muốn đặt một phòng cho 2 người, có 1 giường đơn và 1 sofa, tầm nhìn tuyệt vời ra đường chân trời thành phố.",
+                        "Hãy tìm giúp tôi một phòng có 1 giường đơn, 1 sofa, với view đẹp ra đường chân trời của thành phố sôi động.",
+                        "Tôi cần một phòng dành cho hai người, có 1 giường đơn và 1 sofa, tầm nhìn tuyệt vời ra thành phố và không gian thoải mái.",
+                        "Tôi muốn đặt một phòng có giường đơn và sofa, tầm nhìn tuyệt đẹp ra đường chân trời thành phố, kết hợp giữa phong cách và sự thoải mái.",
+                        "Xin gợi ý một phòng với 1 giường đơn và 1 sofa, view đẹp ra thành phố, không gian mang lại trải nghiệm đáng nhớ.",
+                        "Tôi cần một phòng cho hai người, có giường đơn và sofa, với tầm nhìn rộng mở ra đường chân trời thành phố.",
+                        "Hãy đặt cho tôi một phòng có 1 giường đơn, 1 sofa và cửa sổ lớn nhìn ra đường chân trời thành phố, không gian tiện nghi và thoải mái.",
+                        "Tôi muốn tìm một phòng có 1 giường đơn và 1 sofa, với view đường chân trời thành phố, mang đến không gian thoải mái và hiện đại."],
+            "responses": ["Phòng Pearl Pad là lựa chọn phổ biến với 1 giường đơn và 1 sofa, phù hợp cho khách hàng đi một mình hoặc nhóm bạn. Phòng Pearl Pad có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Platinum Palace Room",
+            "pattern": ["Tôi muốn đặt một phòng cao cấp cho 5 người, có 2 giường đôi và 1 sofa, tầm nhìn ra khu vườn rộng lớn và không gian thoải mái.","Hãy tìm giúp tôi một phòng dành cho 5 người, với 2 giường đôi và sofa, view khu vườn rộng và thiết kế độc đáo.","Tôi cần một phòng cao cấp có 2 giường đôi, 1 sofa và tầm nhìn đẹp ra khu vườn, không gian thoải mái và thư giãn.","Tôi muốn đặt một phòng cho 5 người, có 2 giường đôi và sofa, với view khu vườn rộng lớn, thiết kế mang lại cảm giác dễ chịu.","Xin gợi ý một phòng có 2 giường đôi và 1 sofa cho 5 người, với tầm nhìn ra khu vườn và không gian độc đáo.","Tôi cần một phòng cao cấp cho 5 người, 2 giường đôi và sofa, tầm nhìn ra khu vườn xanh tươi và không gian thoáng đãng.","Hãy đặt giúp tôi một phòng với 2 giường đôi, 1 sofa, dành cho 5 người, tầm nhìn ra khu vườn rộng lớn và thiết kế sang trọng.","Tôi muốn một phòng cao cấp dành cho 5 người, có 2 giường đôi và 1 sofa, không gian thoải mái với tầm nhìn đẹp ra khu vườn."],
+            "responses": ["Phòng Platium Place Room là lựa chọn cao cấp với 2 giường đôi và 1 sofa, phù hợp cho gia đình hoặc nhóm bạn. Phòng Platium Place Room có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Sapphire Sanctuary Room",
+            "pattern": ["Tôi muốn đặt một phòng có 2 giường đơn, nội thất nâng cấp và tầm nhìn ra biển, kết hợp sự thoải mái và sang trọng.",
+                        "Hãy tìm giúp tôi một phòng có 2 giường đơn, với nội thất cao cấp và view biển tuyệt đẹp, không gian sang trọng và thoải mái.",
+                        "Tôi cần một phòng với 2 giường đơn, tầm nhìn ra biển và tiện nghi cao cấp, mang đến trải nghiệm sang trọng.",
+                        "Tôi muốn đặt một phòng có 2 giường đơn, thiết kế nâng cấp, với tầm nhìn ra biển và các tiện nghi hiện đại.",
+                        "Xin gợi ý một phòng có 2 giường đơn, nội thất sang trọng và tầm nhìn ra biển, không gian đầy đủ tiện nghi cao cấp.",
+                        "Tôi cần một phòng có 2 giường đơn, với không gian thoải mái, tầm nhìn biển và các tiện ích cao cấp.",
+                        "Hãy đặt giúp tôi một phòng có 2 giường đơn, với tầm nhìn ra biển và thiết kế nội thất nâng cấp, mang lại sự thoải mái và sang trọng.",
+                        "Tôi muốn tìm một phòng với 2 giường đơn, nội thất sang trọng và tầm nhìn ra biển, không gian thoải mái và tiện nghi hiện đại."],
+            "responses": ["Phòng Sapphire Sanctuary là lựa chọn phổ biến với 2 giường đơn, phù hợp cho 2 người. Phòng Sapphire Sanctuary có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        },
+        {
+            "tag": "Opal Oasis Room",
+            "pattern": ["Tôi muốn đặt một phòng VIP với 1 giường đôi, tầm nhìn ra hồ bơi, nội thất sang trọng và không gian thư thái, đẳng cấp.",
+                        "Hãy tìm giúp tôi một phòng VIP có giường đôi, tầm nhìn ra hồ bơi và thiết kế sang trọng, mang đến sự thư giãn tuyệt vời.",
+                        "Tôi cần một phòng VIP với 1 giường đôi, view hồ bơi và nội thất cao cấp, không gian sang trọng và thoải mái.",
+                        "Tôi muốn một phòng VIP có 1 giường đôi, nội thất sang trọng và tầm nhìn ra hồ bơi, tạo cảm giác thư thái và đẳng cấp.",
+                        "Xin gợi ý một phòng VIP với giường đôi, nội thất sang trọng và tầm nhìn tuyệt vời ra hồ bơi, mang lại sự thoải mái và thư giãn.",
+                        "Tôi cần đặt phòng VIP với 1 giường đôi, tầm nhìn đẹp ra hồ bơi và không gian sang trọng, mang đến trải nghiệm đẳng cấp.",
+                        "Hãy đặt giúp tôi một phòng VIP có giường đôi, không gian sang trọng và tầm nhìn hồ bơi, lý tưởng cho kỳ nghỉ thư giãn.",
+                        "Tôi muốn một phòng VIP với giường đôi, thiết kế nội thất cao cấp và view hồ bơi, mang đến không gian thư giãn và sang trọng."],
+            "responses": ["Phòng Opal Oasis là lựa chọn phổ biến với 1 giường đôi, phù hợp cho 2 người. Phòng Opal Oasis có đầy đủ tiện nghi và không gian thoải mái. Dưới đây là các phòng phù hợp với yêu cầu của bạn: "],
+            "context_filter":"booking"
+        }
+    ]
+}
