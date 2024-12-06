@@ -65,13 +65,12 @@ random.shuffle(training_data)
 train_x = np.array([item[0] for item in training_data])
 train_y = np.array([item[1] for item in training_data])
 
-X_train, X_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.2, random_state=42)
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import SGD
 from tensorflow.keras.callbacks import EarlyStopping
 model = Sequential()
-model.add(Dense(128, input_shape=(X_train.shape[1],), activation='relu'))
+model.add(Dense(128, input_shape=(train_x.shape[1],), activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
@@ -80,39 +79,8 @@ model.add(Dense(len(classes), activation='softmax'))
 early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True) # Dừng sớm nếu val_loss không giảm trong 10 epochs
 sgd = SGD(learning_rate=0.01, weight_decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
-history = model.fit(X_train, y_train, epochs=200, batch_size=5, validation_split=0.2, callbacks=[early_stopping],verbose=1)
-loss, accuracy = model.evaluate(X_test, y_test, verbose=0)
-print(f'Accuracy: {accuracy*100:.2f}%')
+history = model.fit(train_x, train_y, epochs=200, batch_size=5, callbacks=[early_stopping],verbose=1)
 
 model.save('model.keras')
 
-import matplotlib.pyplot as plt
 
- #Vẽ biểu đồ đánh giá quá trình train trên
-acc = history.history['accuracy']
-val_acc = history.history['val_accuracy']
-loss = history.history['loss']
-val_loss = history.history['val_loss']
-
-
-
-#confusion matrix
-from sklearn.metrics import confusion_matrix
-y_pred = model.predict(X_test)
-y_pred = np.argmax(y_pred, axis=1)
-y_test = np.argmax(y_test, axis=1)
-cm = confusion_matrix(y_test, y_pred)
-
-
-fig, axs = plt.subplots(1, 2, figsize=(15, 5))
-axs[0].plot(acc, label='Train Accuracy')
-axs[0].plot(val_acc, label='Validation Accuracy', color = 'red')
-axs[0].set_title('Accuracy')
-axs[0].legend()
-axs[1].plot(loss, label='Train Loss')
-axs[1].plot(val_loss, label='Validation Loss', color = 'red')
-axs[1].set_title('Loss')
-axs[1].legend()
-
-plt.tight_layout()
-plt.show()

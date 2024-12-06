@@ -97,7 +97,7 @@ def getResponse(ints, intents_json):
     if result is None:
         return f"Không tìm thấy phản hồi cho intent: {tag}"
     
-    return result + '-' + tag
+    return result
 
 
 def chatbot_response(msg):
